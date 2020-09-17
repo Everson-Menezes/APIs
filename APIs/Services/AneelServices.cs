@@ -8,7 +8,7 @@ namespace Api_ANEEL.Services
 {
     public class AneelServices
     {
-        private Fornecedor[] GetFornecedores()
+        public Fornecedor[] GetFornecedores()
         {
             return new Fornecedor[]
             {
@@ -381,11 +381,10 @@ namespace Api_ANEEL.Services
                 {
                     Id = 72,
                     Nome ="Ceral Anitápolis"
-                },
-
+                }
             };
         }
-        private Bandeira[] GetBandeiras()
+        public Bandeira[] GetBandeiras()
         {
             return new Bandeira[]
             {
@@ -418,10 +417,10 @@ namespace Api_ANEEL.Services
                     Id = 4,
                     Nome = "Bandeira vermelha - Patamar 2",
                     ValorAcrescido = 0.06243
-                },
+                }
             };
         }
-        private TipoTarifa[] GetTipoTarifas()
+        public TipoTarifa[] GetTipoTarifas()
         {
             return new TipoTarifa[]
             {
@@ -490,10 +489,10 @@ namespace Api_ANEEL.Services
                     Id = 10,
                     Sigla = "AS",
                     Grupo = "Sistemas Subterrâneos"
-                },
+                }
             };
         }
-        private ClasseConsumo[] GetClassesConsumo()
+        public ClasseConsumo[] GetClassesConsumo()
         {
             return new ClasseConsumo[]
           {
@@ -559,7 +558,7 @@ namespace Api_ANEEL.Services
                 {
                     Id = 10,
                     Nome = "Iluminação em rodovias",
-                },
+                }
             };
         }
     }
