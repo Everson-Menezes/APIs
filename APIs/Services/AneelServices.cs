@@ -8,7 +8,7 @@ namespace Api_ANEEL.Services
 {
     public class AneelServices
     {
-        private Fornecedor[] GetFornecedor()
+        private Fornecedor[] GetFornecedores()
         {
             return new Fornecedor[]
             {
@@ -223,7 +223,7 @@ namespace Api_ANEEL.Services
                     Nome ="ELFSM"
                 },
                 new Fornecedor
-                {                    
+                {
                     Id = 41,
                     Nome ="EMG"
                 },
@@ -385,7 +385,7 @@ namespace Api_ANEEL.Services
 
             };
         }
-        private Bandeira[] GetBandeira()
+        private Bandeira[] GetBandeiras()
         {
             return new Bandeira[]
             {
@@ -490,6 +490,75 @@ namespace Api_ANEEL.Services
                     Id = 10,
                     Sigla = "AS",
                     Grupo = "Sistemas Subterrâneos"
+                },
+            };
+        }
+        private ClasseConsumo[] GetClassesConsumo()
+        {
+            return new ClasseConsumo[]
+          {
+                new ClasseConsumo
+                {
+                    Id = 0,
+                    Nome = "N/A",
+                },
+                new ClasseConsumo
+                {
+                    Id = 1,
+                    Nome = "Residencial baixa renda",
+
+                },
+                new ClasseConsumo
+                {
+                    Id = 2,
+                    Nome = "Residencial baixa renda Indígena",
+
+                },
+                new ClasseConsumo
+                {
+                    Id = 3,
+                    Nome = "Residencial baixa renda benefício de prestação continuada da assistência social",
+
+                },
+                new ClasseConsumo
+                {
+                    Id = 4,
+                    Nome = "Residencial baixa renda multifamiliar",
+
+                },
+                new ClasseConsumo
+                {
+                    Id = 5,
+                    Nome = "Serviços de transporte, exceto tração elétrica",
+
+                },
+                new ClasseConsumo
+                {
+                    Id = 6,
+                    Nome = "Serviços de comunicações e telecomunicações",
+
+                },
+                new ClasseConsumo
+                {
+                    Id = 7,
+                    Nome = "Associação e entidades filantrópicas",
+
+                },
+                new ClasseConsumo
+                {
+                    Id = 8,
+                    Nome = "Templos religiosos",
+
+                },
+                new ClasseConsumo
+                {
+                    Id = 9,
+                    Nome = "Administração condominial"
+                },
+                new ClasseConsumo
+                {
+                    Id = 10,
+                    Nome = "Iluminação em rodovias",
                 },
             };
         }
