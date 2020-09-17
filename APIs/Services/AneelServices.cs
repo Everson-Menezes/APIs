@@ -421,5 +421,77 @@ namespace Api_ANEEL.Services
                 },
             };
         }
+        private TipoTarifa[] GetTipoTarifas()
+        {
+            return new TipoTarifa[]
+            {
+                new TipoTarifa
+                {
+                    Id = 0,
+                    Sigla = "N/A",
+                    Grupo = "Não se aplica"
+                },
+                new TipoTarifa
+                {
+                    Id = 1,
+                    Sigla = "A1",
+                    Grupo = "Alta Tensão"
+                },
+                new TipoTarifa
+                {
+                    Id = 2,
+                    Sigla = "A2",
+                    Grupo = "Alta Tensão"
+                },
+                new TipoTarifa
+                {
+                    Id = 3,
+                    Sigla = "A3",
+                    Grupo = "Alta Tensão"
+                },
+                new TipoTarifa
+                {
+                    Id = 4,
+                    Sigla = "A3a",
+                    Grupo = "Média Tensão"
+                },
+                new TipoTarifa
+                {
+                    Id = 5,
+                    Sigla = "A4",
+                    Grupo = "Média Tensão"
+                },
+                new TipoTarifa
+                {
+                    Id = 6,
+                    Sigla = "B1",
+                    Grupo = "Baixa Tensão"
+                },
+                new TipoTarifa
+                {
+                    Id = 7,
+                    Sigla = "B2",
+                    Grupo = "Baixa Tensão"
+                },
+                new TipoTarifa
+                {
+                    Id = 8,
+                    Sigla = "B3",
+                    Grupo = "Baixa Tensão"
+                },
+                new TipoTarifa
+                {
+                    Id = 9,
+                    Sigla = "B4",
+                    Grupo = "Média Tensão"
+                },
+                new TipoTarifa
+                {
+                    Id = 10,
+                    Sigla = "AS",
+                    Grupo = "Sistemas Subterrâneos"
+                },
+            };
+        }
     }
 }
