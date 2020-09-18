@@ -25,5 +25,23 @@ namespace Api_ANEEL.Controllers
             var resultado = _aneelServices.GetBandeiras();
             return resultado;
         }
+        [HttpGet("fornecedores")]
+        public ActionResult<IEnumerable<Fornecedor>> GetFornecedores()
+        {
+            var resultado = _aneelServices.GetFornecedores();
+            return resultado;
+        }
+        [HttpGet("tipo-tarifas")]
+        public ActionResult<IEnumerable<TipoTarifa>> GetTipoTarifas()
+        {
+            var resultado = _aneelServices.GetTipoTarifas();
+            return resultado;
+        }
+        [HttpGet("classes-consumo")]
+        public ActionResult<IEnumerable<ClasseConsumo>> GetClassesConsumos()
+        {
+            var resultado = _aneelServices.GetClassesConsumo();
+            return resultado;
+        }
     }
 }
